@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --color-1: #d1cbd9ff;
+    --color-2: #c2aecaff;
+    --color-3: #ca9bbeff;
+    --color-4: #efd0ceff;
+    --color-5: #ecb1a3ff;
+    --color-6: #d9877cff;
+    --color-7: #cd696bff;
+    --color-8: #b6606cff;
+
+    --tcolor-1: rgba(209, 203, 217, 0.4);
+    --tcolor-2: rgba(194, 174, 202, 0.4);
+    --tcolor-3: rgba(202, 155, 190, 0.4);
+    --tcolor-4: rgba(239, 208, 206, 0.4);
+    --tcolor-5: rgba(236, 177, 163, 0.4);
+    --tcolor-6: rgba(217, 135, 124, 0.4);
+    --tcolor-7: rgba(205, 105, 107, 0.4);
+    --tcolor-8: rgba(182, 96, 108, 0.4);
+    
+    --font-1: "Science Gothic";
+    --font-2: "Space Grotesk";
+}
+
+/*body*/
+body {
+    font-family: var(--font-2);
+    background: url(https://images.pexels.com/photos/5722854/pexels-photo-5722854.jpeg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 13px;
+}
+
+/*topbar*/
+.topbar {
+    background: var(--tcolor-3);
+    color: var(--color-4);
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid var(--color-3);
+}
+
+.topbar a {
+    color: var(--color-5) !important;
+}
+
+.topbar a:hover {
+    background: var(--tcolor-3) !important;
+    border-radius: 15px;
+    color: var(--color-4) !important;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.toplinks .badge {
+    padding-right: 5px;
+    background: var(--color-8);
+    color: var(--color-5);
+}
