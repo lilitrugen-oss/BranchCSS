@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+:root{
+    --color-1: #fff1d8;
+    --color-2: #d9d1c4;
+    --color-3: #b09e8f;
+    --color-4: #866745;
+    --color-5: #59402f;
+    --color-6: #351c17;
+    --color-7: #342022;
+    --color-8: #1f090d;
+
+    --tcolor-1: rgba(255, 241, 216, 0.4);
+    --tcolor-2: rgba(217, 209, 196, 0.4);
+    --tcolor-3: rgba(176, 158, 143, 0.4);
+    --tcolor-4: rgba(134, 103, 69, 0.4);
+    --tcolor-5: rgba(89, 64, 47, 0.4);
+    --tcolor-6: rgba(53, 28, 23, 0.4);
+    --tcolor-7: rgba(52, 32, 34, 0.4);
+    --tcolor-8: rgba(17, 5, 7, 0.4);
+    
+    --font1: "Pangolin";
+}
+
+/*body*/
+body {
+    font-family: var(--font1) !important;
+    background: url(https://images.pexels.com/photos/28718325/pexels-photo-28718325.jpeg) scroll;
+    background-repeat: round;
+    background-size: contain;
+    font-size: 13px;
+    color: var(--color-2);
+}
+
+
+.badge {
+    padding-right: 5px;
+    background: var(--color-8);
+    color: var(--color-5);
+}
+
+a:focus, a:focus-visible{
+    outline: none !important;
+    outline-offset: -2px;
+    border: none !important;
+    text-decoration: none !important;
+    color: var(--color-8) !important;
+}
+
+/*topbar*/
+.topbar {
+    background: var(--color-7);
+    color: var(--tcolor-1);
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid var(--color-8);
+}
+
+.topbar a {
+    color: var(--color-3) !important;
+}
+
+.topbar a:hover {
+    background: var(--tcolor-8) !important;
+    border-radius: 15px;
+    color: var(--color-3) !important;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.toplinks li button {
+    color: var(--color-3) !important;
+}
+
+/*alerts*/
+.alert-danger {
+    color: var(--color-8);
+    background-color: var(--tcolor-8);
+    border: var(--tcolor-8) 6px double;
+    border-radius: 15px;
+    border-right: none;
+    border-left: none;
+}
+
+.alert a {
+    color: var(--color-4) !important;
+}
+
+.alert a:hover {
+    text-shadow: 2px 4px var(--color-6);
+}
+
+.alert-success {
+    color: var(--color-3);
+    background-color: var(--tcolor-8);
+    border: var(--tcolor-4) 6px double;
+    border-radius: 15px;
+    border-right: none;
+    border-left: none;
+}
+
+/*main*/
+.main {
+    background: var(--tcolor-8);
+    margin-top: 60px;
+    box-shadow: none;
+    border-radius: 25px;
+    border: 3px var(--color-8) solid;
+}
+
+/*navbar*/
+.navbar {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background: var(--color-7);
+    text-transform: uppercase;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav.navbar.navbar-default li a {
+    margin-top: 5px;
+    color: var(--tcolor-1);
+}
+
+nav.navbar.navbar-default li a:hover {
+    background: transparent;
+    font-weight: 900;
+    color: var(--color-3);
+    text-shadow: 6px 5px var(--tcolor-8);
+    border: none !important;
+}
+
+.navbar .navbar-header {
+    width: 20%;
+}
+
+div#bs-example-navbar-collapse-1 {
+    width: 170%;
+}
+
+a.navbar-brand.visible-lg.visible-md img {
+    content: url(https://static.lioden.com/images/items/Other/coffeebeans.png);
+    width: 100%;
+    margin-top: -1%;
+    transform: scaleX(-1);
+}
+
+/*page*/
+.col-md-9 {
+    background: none;
+    padding-top: 25px;
+}
+
+/*breadcrumb*/
+.breadcrumb {
+    background: var(--tcolor-6);
+    font-size: 13px;
+}
+
+ol.breadcrumb a {
+    color: var(--color-3);
+}
+
+ol.breadcrumb a:hover {
+    background: var(--tcolor-3) !important;
+    border-radius: 15px;
+    color: var(--color-4) !important;
+    padding: 5px;
+}
+
+.breadcrumb .active {
+    color: var(--color-1);
+}
+
+
+/*buttons*/
+input.floatright, button.button, input[type="button"], a.btn.btn-default.button {
+    border: 2px solid var(--tcolor-8);
+    color: var(--color-4);
+    text-shadow: none;
+    background: var(--color-8) !important;
+}
+
+input.floatright:hover, button.button:hover, input[type="button"]:hover, a.btn.btn-default.button:hover {
+    border: 2px solid var(--color-3);
+    color: var(--color-8);
+    text-shadow: none;
+    background: var(--tcolor-3) !important;
+}
+
+/*under breadcrumb*/
+h1 {
+    color: var(--color-3);
+}
+
+div .left {
+    background: var(--color-7);
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    color: var(--tcolor-1);
+}
+
+div .left a {
+  color: var(--color-3);
+}
+
+div .left a:hover{
+  color: var(--color-2);
+}
+
+/*items and table*/
+table.table.auto {
+    border: 2px solid var(--color-7);
+}
+
+th {
+    background: var(--color-7) !important;
+    border: none !important;
+    color: var(--color-3) !important;
+}
+
+.table .bottom {
+    background: var(--color-3) !important;
+}
+
+td.left.b {
+    background: var(--tcolor-7) !important;
+    border-radius: 0 !important;
+    color: var(--tcolor-1);
+}
+
+.item {
+    height: auto;
+    margin: 2px;
+    border-top: 6px double var(--color-5);
+    border-bottom: 6px double var(--color-6);
+    border-left: none;
+    border-right: none;
+    border-radius: 20px;
+    background: var(--tcolor-3) !important;
+    color: var(--tcolor-1);
+    margin-bottom: 8px;
+}
+
+.item-header {
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    background: var(--tcolor-5);
+    color: var(--color-2);
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
+.item-footer {
+    padding: 3%;
+    padding-top: 5%;
+    font-size: 12px;
+    font-weight: bold;
+    background: var(--tcolor-5);
+    color: var(--color-2);
+    border-radius: 20px;
+}
+
+[name="price[]"] {
+    color: var(--color-3) !important;
+    background-color: var(--color-8);
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+[name="cprice[]"] {
+    color: var(--color-3) !important;
+    background-color: var(--color-8);
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+input[type=checkbox]{
+  accent-color: var(--color-8);
+}
+
+.form-control {
+    background: var(--tcolor-8);
+    border: 3px solid var(--color-8);
+    color: var(--color-3);
+    scrollbar-color: var(--color-7) var(--tcolor-8);
+}
+
+
+
+/*sidebar*/
+.col-md-3 .panel {
+    border: none;
+    border-bottom: 6px double var(--color-7);
+    border-top: 6px double var(--color-7);
+    border-radius: 20px;
+    background: var(--tcolor-7);
+    box-shadow: none;
+    color: var(--color-3);
+}
+
+.col-md-3 a {
+  color: var(--color-2);
+}
+
+.col-md-3 a:hover {
+    background: transparent;
+    color: var(--color-2);
+    border: none;
+    text-shadow: 5px 5px var(--tcolor-8);
+}
+
+.sidebar h3 {
+    color: var(--color-3);
+}
+
+.progress {
+    background: var(--color-8);
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-image: linear-gradient(45deg, var(--color-8), var(--tcolor-3));
+    background-color: var(--color-8);
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px;
+}
+
+.progress div {
+    color: var(--color-2);
+}
+
+/*human created*/
+.col-xs-2.text-right img {
+    filter: sepia(80%) hue-rotate(299deg) saturate(900%);
+}
+
+/*blocks*/
+.container-block-main {
+    color: var(--color-5);
+    height: 800px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+    font-family: var(--font-2);
+    font-size: small;
+}
+
+.block-main {
+    display: block;
+    overflow: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: var(--transparent-color-1);
+    border: 3px solid var(--color-3);
+    border-radius: 10px;
+    text-align: center;
+    scrollbar-color: var(--color-4) var(--tcolor-4);
+    line-height: 1;
+}
+
+.block1-info {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+}
+
+.block2-info {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+}
+
+.block3-info {
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+}
+
+.block-main-header font {
+    color: var(--color-5) !important;
+    font-size: x-large !important;
+}
+
+.block-lion-card {
+    display: block;
+    width: 98%;
+    height: auto;
+    margin: 2px;
+    border-top: 5px double var(--color-4);
+    border-bottom: 5px double var(--color-4);
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    color: var(--color-4);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.block-lion-card img {
+    width: 100%;
+    height: auto;
+}
+
+.lion-card-name {
+    font-size: larger;
+}
+
+/*credits*/
+.breadcrumb::after {
+    content: "CSS by Polaris Penumbra (#419566)";
+    position: absolute;
+    right: 20%;
+    z-index: 100;
+    color: var(--color-4);
+}
